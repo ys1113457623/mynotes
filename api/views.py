@@ -52,3 +52,6 @@ def getNote(request,pk):
     notes = Note.objects.get(id=pk)
     serializer = NoteSerializer(notes,many=False)
     return Response(serializer.data)
+
+def index(request):
+    return render(request,'index.html')
