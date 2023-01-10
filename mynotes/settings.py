@@ -133,5 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'mynote/build/static')
 ]
+ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1']
 
 CORS_ALLOW_ALL_ORIGINS = True
