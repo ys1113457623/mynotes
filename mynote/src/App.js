@@ -20,6 +20,7 @@ function App() {
           <Routes>
               <Route path="/" exact element={<NotesListPage/>} />
               <Route path="/notes/:id" element={<NotePage />} /> 
+              {/* <Route path="/note/new" element={<NotePage />} />  */}
           </Routes>
         </div>
       </div>
