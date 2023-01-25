@@ -31,7 +31,7 @@ const NotePage = () => {
 
   let createNote = async () => {
     fetch(`/api/notes/create/`,{
-      method: 'PUT',
+      method: 'POST',
       headers: {
         'Content-Type' : 'application/json'
       },
@@ -51,7 +51,7 @@ const NotePage = () => {
   }
 
   let handleSubmit = ()=>{
-    if(id !=='new' && !note.body){
+    if(id !=='new' && note.body === ''){
         deleteNote()
     }
     else if(id !== 'new'){
