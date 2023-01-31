@@ -1,8 +1,7 @@
 import {
-  BrowserRouter,
-  Routes,
+  BrowserRouter as Router,
   Route,
-  Link,
+  Routes
 } from "react-router-dom";
 import React from 'react';
 import './App.css';
@@ -13,7 +12,7 @@ import NotePage from './pages/NotePage'
 function App() {
   return (
     
-    <BrowserRouter>
+    <Router>
       <div className="container dark">
         <div className="app">
           <Header />
@@ -24,7 +23,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </Router>
     // <Router>
     //   <div className='App'>
     //     <Header />
